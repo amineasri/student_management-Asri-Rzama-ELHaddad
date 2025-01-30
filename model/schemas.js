@@ -6,7 +6,7 @@ let StudentSchema = Schema({
     lastName: String,
 });
 
-let student = mongoose.model('Student', StudentSchema);
+let Student = mongoose.model('Student', StudentSchema);
 
 let courseSchema = Schema({
     name: String,
@@ -25,7 +25,7 @@ let Grade = mongoose.model('Grade', gradeSchema);
 
 // Exports the modeles
 module.exports = {
-    Student: student,
+    Student: Student,
     Course: Course,
     Grade: Grade,
 }
